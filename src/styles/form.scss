@@ -1,0 +1,142 @@
+.load-container {
+  position: relative;
+  min-width: 353px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 5px 10px #747473;
+  
+  &__col {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    color: #000000;
+    padding: 15px 10px;
+  }
+
+  &__content {
+      height: auto;
+      padding: 10px;
+  }
+  
+  &__footer {
+      height: auto;
+      padding: 0 10px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  
+  &__title {
+    left: 20px;
+  }
+}
+
+.comments {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid grey;
+
+  &__inner {
+    height: 138px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+  }
+
+  &__place, &__text, &__date {
+    font-size: 16px;
+    line-height: 18px;
+    color: #8F8F8F;
+  }
+
+  &__comment {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding-right: 5px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    outline: none;
+
+    &:focus {
+      border: 1px solid grey;
+    }
+  }
+
+  &__textarea {
+    height: 85px;
+    overflow: hidden;
+  }
+  
+  &__message {
+    height: 85px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    resize: none;
+    outline: none;
+    border: none;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    &-wrapper {
+      padding: 5px 5px 5px 10px;
+      border-radius: 10px;
+      border: 1px solid #cccccc;
+      overflow: hidden;
+      margin-bottom: 20px;
+
+      &:focus-within {
+        border: 1px solid grey;
+      }
+    }
+  }
+
+  &__button {
+    align-self: flex-end;
+    padding: 8px 10px;
+    background: #ff8663;
+    color: #ffffff;
+    border-radius: 10px;
+    user-select: none;
+    outline: none;
+    border: 1px solid transparent;
+
+    &:focus {
+      border-color:#222222;
+    }
+  }
+}
